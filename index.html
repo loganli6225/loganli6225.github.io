@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logan Li | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar" id="navbar">
+    <div class="logo">Logan Li</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#extracurriculars">Extracurriculars</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero section-dark">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">B.S. Bioengineering · Minor in Mathematics · UC San Diego</p>
+
+        <h1>Logan Li</h1>
+        
+        <p class="hero-subtitle">
+          I build electromechanical systems.<br>
+          With healthcare experience, focused on robotics.
+        </p>
+
+        <div class="hero-details">
+          <p>Undergraduate Student Researcher at Advanced Robotics and Controls Laboratory</p>
+          <p>Engineering Intern at Evolve Medtech Partners</p>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="headshot.jpg" alt="Portrait of Logan Li">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="content-section full-screen-section section-light">
+    <div class="section-inner about-layout">
+      <div class="about-copy">
+        <p class="section-label">About</p>
+        <h2>About Me</h2>
+
+        <p>
+          I am a bioengineering student at UC San Diego with experience in both academia and industry, focused on designing and building electromechanical systems that integrate mechanical design, embedded systems, and software. My work includes haptic devices, teleoperation systems, and medical device development, where I build complete systems from concept through testing and validation.
+        </p>
+
+        <p>
+          My interest in bioengineering began with a general desire to improve healthcare using engineering. Through coursework and hands-on projects, I became increasingly drawn to mechanical engineering, robotics, and human-robot interaction. While I continue to value healthcare applications, I am now focused on designing and building integrated systems where hardware, control, and sensing come together in real-world environments to improve how humans and technology interact with the physical world.
+        </p>
+      </div>
+
+      <aside class="about-side">
+        <div class="about-group">
+          <p class="about-label">Currently</p>
+          <p class="about-item">Undergraduate Student Researcher @ ARCLab</p>
+          <p class="about-item">Engineering Intern @ Evolve Medtech Partners</p>
+        </div>
+
+        <div class="about-group">
+          <p class="about-label">Areas of Interest</p>
+          <p class="about-item">Mechatronics</p>
+          <p class="about-item">Robotics</p>
+          <p class="about-item">Medical Devices</p>
+        </div>
+
+        <div class="about-group">
+          <p class="about-label">Skills &amp; Tools</p>
+
+          <div class="about-subgroup">
+            <p class="about-subheading">Mechanical Design</p>
+            <p class="about-detail">CAD, Rapid Prototyping, FEA, CNC &amp; Manual Machining</p>
+          </div>
+
+          <div class="about-subgroup">
+            <p class="about-subheading">Embedded Systems</p>
+            <p class="about-detail">Microcontrollers, Sensor Integration, Motor Actuation</p>
+          </div>
+
+          <div class="about-subgroup">
+            <p class="about-subheading">Software &amp; Programming</p>
+            <p class="about-detail">Python, ROS2, OpenCV, C/C++, MATLAB</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="projects" class="content-section section-dark">
+    <div class="section-inner">
+      <p class="section-label">Projects</p>
+      <h2>Selected Projects</h2>
+
+      <div class="project-showcase">
+        <div class="project-info">
+          <h3>N3D Haptic Glove</h3>
+          <p>
+            Developing the world's first wearable haptic glove capable of rendering axial, transverse, and shear forces across multiple fingertips.
+            Designed the glove’s unique capstan-driven mechanical structure through rapid prototyping,
+            characterized motor voltage–force relationship through mathematical modeling,
+            and implemented ROS2-based scripts with forward kinematics for fingertip pose tracking.
+            Enables users to experience realistic force feedback during contact-rich virtual reality and robot teleoperation tasks.
+          </p>
+          <p class="project-meta">CAD · Rapid Prototyping · ROS2 · Python · Embedded Systems</p>
+          <a href="#" class="button">View Project</a>
+        </div>
+
+        <div class="project-media">
+          <img src="https://via.placeholder.com/500x700" alt="Haptic glove">
+        </div>
+      </div>
+
+      <div class="project-showcase">
+        <div class="project-media">
+          <img src="https://via.placeholder.com/700x450" alt="Dip coating machine">
+        </div>
+
+        <div class="project-info">
+          <h3>Pan-Tilt Object Tracking Device</h3>
+          <p>
+            Built an autonomous real-time 360° pan-tilt object tracking device using an ESP32-CAM,
+            continuous servo motor actuation, and a computer vision pipeline.
+            Developed an OpenCV pipeline using HSV color segmentation and implemented PID control for closed-loop servo positioning,
+            integrated with a custom 3D-printed mechanical design.
+            System architecture intentionally designed to support extension toward more advanced OpenCV detection methods beyond simple color-based tracking.
+          </p>
+          <p class="project-meta">Python · OpenCV · PID Control · Embedded Systems · CAD</p>
+          <a href="#" class="button">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-showcase">
+        <div class="project-info">
+          <h3>VR Humanoid Hand Teleoperation System</h3>
+          <p>
+            Developing a ROS2-based teleoperation framework for virtual and physical humanoid hand control with integrated haptic feedback.
+            Integrated Meta Quest hand tracking with a MuJoCo simulation to compute real-time finger-object contact forces, 
+            and mapped simulated forces to servo motor commands of a wearable haptic glove.
+            Enables realistic, closed-loop haptic interaction during virtual object grasping tasks using entirely open-source hardware.
+          </p>
+          <p class="project-meta">ROS2 · MuJoCo Simulation · Python · Embedded Systems</p>
+          <a href="#" class="button">View Project</a>
+        </div>
+
+        <div class="project-media">
+          <img src="https://via.placeholder.com/600x500" alt="Lubricity tester">
+        </div>
+      </div>
+
+      <div class="project-showcase">
+        <div class="project-media">
+          <img src="https://via.placeholder.com/700x450" alt="Robot vision tracking system">
+        </div>
+
+        <div class="project-info">
+          <h3>Last Project</h3>
+          <p>
+            Description
+          </p>
+          <p class="project-meta">Skills & Tools</p>
+          <a href="#" class="button">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="content-section full-screen-section section-light">
+    <div class="section-inner">
+      <p class="section-label">Experience</p>
+      <h2>Professional Work</h2>
+
+      <div class="card-grid experience-grid">
+        <article class="info-card experience-card">
+          <img src="arclab.jpg" alt="ARCLab research work">
+          <div class="card-text">
+            <div class="experience-top">
+              <p class="experience-org">ARCLab</p>
+              <p class="experience-date">Jun 2025 — Present</p>
+            </div>
+
+            <h3>Undergraduate Student Researcher</h3>
+
+            <p class="experience-description">
+              Developing the N3D Haptic Glove, the world's first wearable haptic glove capable of
+              providing 3-DOF force feedback across multiple fingertips for surgical VR and
+              teleoperation tasks. Previous work on its predecessor, the N2D Haptic Glove, has been
+              submitted to IROS and ICRA 2026.
+            </p>
+
+            <p class="experience-meta">Rapid Prototyping · CAD · ROS2 · Python · Embedded Systems · Data Analysis</p>
+          </div>
+        </article>
+
+        <article class="info-card experience-card">
+          <img src="evolve.jpg" alt="Evolve Medtech engineering work">
+          <div class="card-text">
+            <div class="experience-top">
+              <p class="experience-org">Evolve Medtech Partners</p>
+              <p class="experience-date">Nov 2025 — Present</p>
+            </div>
+
+            <h3>Engineering Intern</h3>
+
+            <p class="experience-description">
+              Designing and building dip coating machines, fixtures, and test systems to support catheter projects.
+              Developing custom Python scripts and 3D-printed components to automate testing processes, improve machining workflow efficiency and repeatability,
+              and replace manual Excel-based analysis.
+            </p>
+
+            <p class="experience-meta">CAD · Python · Embedded Systems · Machining · PLC · Data Analysis · Technical Reports</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="extracurriculars" class="content-section section-dark">
+    <div class="section-inner">
+      <p class="section-label">Extracurriculars</p>
+      <h2>Beyond the Classroom</h2>
+
+      <div class="card-grid extracurricular-grid extracurricular-grid-three">
+
+        <article class="info-card extracurricular-card">
+          <img src="organization-1.jpg" alt="Triton Droids work">
+          <div class="extracurricular-text">
+            <div class="extracurricular-header">
+              <p class="extracurricular-org">
+                <a href="https://www.tritondroids.com/" target="_blank" rel="noopener noreferrer">Triton Droids</a>
+              </p>
+            </div>
+
+            <div class="extracurricular-role extracurricular-role-first">
+              <div class="extracurricular-role-top">
+                <p class="extracurricular-role-title">Embedded Systems Engineer</p>
+                <p class="extracurricular-role-date">Sep 2025 — Present</p>
+              </div>
+              <p class="extracurricular-role-desc">
+                Developing a VR humanoid hand teleoperation and haptic feedback framework using ROS2, MuJoCo, Meta Quest, and open-source hardware components.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="info-card extracurricular-card">
+          <img src="organization-2.jpg" alt="Biomedical Engineering Society">
+          <div class="extracurricular-text">
+            <div class="extracurricular-header">
+              <p class="extracurricular-org">
+                <a href="https://bmesatucsd.org/" target="_blank" rel="noopener noreferrer">Biomedical Engineering Society @ UCSD</a>
+              </p>
+            </div>
+
+            <div class="extracurricular-role extracurricular-role-first">
+              <div class="extracurricular-role-top">
+                <p class="extracurricular-role-title">
+                  <a href="https://sites.google.com/ucsd.edu/be-day-2025/home" target="_blank" rel="noopener noreferrer">
+                    Co-Chair of Bioengineering Day 2025 Committee
+                  </a>
+                </p>
+                <p class="extracurricular-role-date">Sep 2024 — Jun 2025</p>
+              </div>
+              <p class="extracurricular-role-desc">
+                Co-led a 7-member team in organizing Bioengineering Day 2025, achieving 450+ attendees and 30% attendance growth.
+              </p>
+            </div>
+
+            <div class="extracurricular-role">
+              <div class="extracurricular-role-top">
+                <p class="extracurricular-role-title">
+                  <a href="https://sites.google.com/ucsd.edu/beday2024/home" target="_blank" rel="noopener noreferrer">
+                    Sub-Lead of Bioengineering Day 2024 Committee
+                  </a>
+                </p>
+                <p class="extracurricular-role-date">Sep 2023 — Jun 2024</p>
+              </div>
+              <p class="extracurricular-role-desc">
+                Recruited 11 representatives from 7 bioengineering companies to present at Bioengineering Day 2024, creating networking opportunities for 350+ attendees.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="info-card extracurricular-card">
+          <img src="organization-3.jpg" alt="Engineering World Health">
+          <div class="extracurricular-text">
+            <div class="extracurricular-header">
+              <p class="extracurricular-org">Engineering World Health @ UCSD</p>
+            </div>
+
+            <div class="extracurricular-role extracurricular-role-first">
+              <div class="extracurricular-role-top">
+                <p class="extracurricular-role-title">Project Team Leader</p>
+                <p class="extracurricular-role-date">Sep 2024 — Jun 2025</p>
+              </div>
+              <p class="extracurricular-role-desc">
+                Mentored a 10-member team in developing a 3D-printed 5-DOF bionic hand, focused on teaching end-to-end hardware and embedded systems prototyping.
+              </p>
+            </div>
+
+            <div class="extracurricular-role">
+              <div class="extracurricular-role-top">
+                <p class="extracurricular-role-title">Project Team Member</p>
+                <p class="extracurricular-role-date">Sep 2023 — Jun 2024</p>
+              </div>
+              <p class="extracurricular-role-desc">
+                Assisted in designing hardware for a PPG-based non-invasive blood pressure monitor, presenting the first prototype to 50+ attendees at a showcase.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section contact-section section-light">
+    <div class="section-inner">
+      <div class="contact-copy">
+        <p class="section-label">Contact</p>
+        <h2>Get in Touch</h2>
+
+        <a class="contact-linkedin" href="https://www.linkedin.com/in/logan-li-ucsd/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <span class="contact-linkedin-icon">in</span>
+          <span class="contact-linkedin-text">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
